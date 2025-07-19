@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fries by Anea</title>
+  <link rel="stylesheet" href="/css/anea.css">
+</head>
+<body>
+
+  <header class="banner">
+  <div class="banner-content">
+    <h1>Fries by Anea</h1>
+    <p>Deliciously Golden Moments</p>
+  </div>
+</header>
+
+
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-text">
+      Fries by Anea is more than just food — it's a golden experience made with love. Every serving is crafted to bring joy, comfort, and that perfect crunch. Whether you're on a break or hanging out with friends, our fries and drinks are the moments you won't forget.
+    </p>
+  </section>
+
+  <section class="services" id="services">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-text">
+      We specialize in tasty, quick-serve comfort meals with a signature twist:
+    </p>
+    <ul class="services-list">
+      <li>🍟 Crispy, seasoned fries made fresh daily</li>
+      <li>🍗 Flavor-packed chicken that melts in your mouth</li>
+      <li>🍹 Refreshing homemade drinks including pineapple juice and strawberry lemonade</li>
+      <li>📦 Fast delivery and smooth pick-up options</li>
+    </ul>
+  </section>
+
+  <section class="menu" id="menu">
+    <h2 class="section-title">Menu</h2>
+    <div class="menu-items">
+      <div class="item">🍟 Fries</div>
+      <div class="item">🥤 Coke</div>
+      <div class="item">🍍 Pineapple Juice</div>
+      <div class="item">🍗 Chicken</div>
+      <div class="item">🍓 Strawberry Lemonade</div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="section-text">
+      Have a question or want to place an order? Let’s talk!
+    </p>
+    <a href="https://wa.me/2330557231742?text=Hi%2C%20I%27m%20%5Byour%20name%5D%20and%20I%20want%20to%20order%20from%20Fries%20by%20Anea." 
+       target="_blank" class="contact-btn">
+      Message Us on WhatsApp
+    </a>
+  </section>
+
+     <!-- Your sections above here -->
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-in');
+          observer.unobserve(entry.target); // only animate once
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    document.querySelectorAll('.section-title, .section-text, .services-list, .item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+
+  
+</body>
+</html>
