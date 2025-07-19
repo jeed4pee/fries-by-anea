@@ -7,7 +7,7 @@ body {
 }
 
 .banner {
-  background-image: url(/images/anea\ fries.jpg);
+  background-image: url(anea\ fries.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
